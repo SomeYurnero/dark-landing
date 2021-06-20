@@ -1,0 +1,98 @@
+.swiper-slide-active {
+    row-gap: 36px;
+    transition: 1s;
+
+    .slide__top {
+        grid-template-rows:
+            1fr
+            1fr;
+        column-gap: 8px;
+        transition: 1s;
+    }
+
+    .slide__img {
+        @include adaptive-value("max-width", 450, 220, 1920, 320, 1);
+        @include adaptive-value("max-height", 500, 300, 1920, 320, 1);
+        @include adaptive-value("padding-right", 20, 15, 1920, 320, 1);
+        @include adaptive-value("padding-left", 20, 15, 1920, 320, 1);
+        transition: 1s;
+    }
+
+    .slide__side-text {
+        grid-row: 2 / -1;
+        color: rgb(255, 255, 255);
+        align-self: start;
+        justify-self: end;
+        transition: 1s;
+
+        span:first-child {
+            display: inline-block;
+            transform: scale(-1, 1);
+            transition: 1s;
+        }
+
+        span:last-child {
+            color: rgb(37, 248, 0);
+            transform: none;
+            transition: 1s;
+        }
+    }
+
+    .slide__product-frame {
+        grid-column: 2 / -2;
+        grid-row: 2 / -1;
+        display: initial;
+        transition: 1s;
+    }
+
+    .slide__description {
+        grid-template-rows:
+            auto
+            auto
+            auto
+            auto;
+        transition: 1s;
+    }
+
+    .slide__title {
+        color: rgb(255, 255, 255);
+        transition: 1s;
+    }
+
+    .slide__price {
+        color: #0be10b;
+        transition: 1s;
+    }
+
+    .slide__text {
+        font-family: 'Muller';
+        font-weight: 100;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.9px;
+        color: white;
+        grid-row: 3 / 4;
+        text-align: justify;
+        -webkit-line-clamp: 5;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        transition: 1s;
+
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    .slide__transparent-button-link {
+        display: none;
+        transition: 1s;
+    }
+
+    .slide__button-link {
+        grid-column: 1 / -1;
+        grid-row: 4 / -1;
+        display: initial;
+        transition: 1s;
+    }
+}

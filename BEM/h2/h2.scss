@@ -1,0 +1,13 @@
+.h2 {
+    font-family: 'AlphaHeadline';
+    @include adaptive-value("font-size", 52, 30, 1920, 320, 1);
+    line-height: 115.4%;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    color: white;
+
+    span {
+        display: inline-block;
+        color: #0ee50e;
+    }
+}

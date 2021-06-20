@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'icon-font';
+  src:  url('../icon-font/icon-font.eot?nu4f37');
+  src:  url('../icon-font/icon-font.eot?nu4f37#iefix') format('embedded-opentype'),
+    url('../icon-font/icon-font.ttf?nu4f37') format('truetype'),
+    url('../icon-font/icon-font.woff?nu4f37') format('woff'),
+    url('../icon-font/icon-font.svg?nu4f37#icon-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]:after,
+[class*=" icon-"]:after {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon-font' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-long-arrow-right:after {
+  content: "\e900";
+}

@@ -1,0 +1,125 @@
+.button-link {
+  height: 74px;
+  position: relative;
+}
+
+.button-link__container {
+  cursor: pointer;
+  height: 74px;
+  display: inline-block;
+  padding: 22px 16px;
+  background: #069f06;
+  background: -webkit-gradient(linear, left top, right top, from(#069f06), to(#06dd06));
+  background: linear-gradient(to right, #069f06 0%, #06dd06 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#069f06', endColorstr='#06dd06',GradientType=1 );
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.button-link__container:hover {
+  -webkit-transform: translate(10px, 10px);
+          transform: translate(10px, 10px);
+}
+
+.button-link__container:focus-within + .button-link__background {
+  -webkit-box-shadow: 0 0 9px 5px #06dc06, inset 0 0 9px 2.5px #06dc06;
+          box-shadow: 0 0 9px 5px #06dc06, inset 0 0 9px 2.5px #06dc06;
+}
+
+.button-link__a {
+  color: white;
+  font-family: 'AlphaHeadline';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.button-link__a::after {
+  margin: 0 0 0 18px;
+}
+
+.button-link__svg {
+  width: 60%;
+  height: 60%;
+  fill: white;
+}
+
+.button-link__svg:active {
+  fill: #09ca09;
+}
+
+.button-link__background {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  z-index: -1;
+  display: inline-block;
+  width: 100%;
+  height: 74px;
+  border: 1px solid #06dd06;
+  -webkit-box-shadow: 0 0 9px 2.5px #06dc06, inset 0 0 9px 2.5px #06dc06;
+          box-shadow: 0 0 9px 2.5px #06dc06, inset 0 0 9px 2.5px #06dc06;
+}
+
+.button-link__a_form {
+  background: transparent;
+}
+
+.button-link_slide-active {
+  height: auto;
+}
+
+.button-link__container_slide-active {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 0 15px;
+  height: 50px;
+}
+
+.button-link__a_slide-active {
+  font-size: 24px;
+}
+
+.button-link__a_slide-active::after {
+  margin: 0 0 0 12px;
+}
+
+.button-link__background_slide-active {
+  width: 100%;
+  height: 50px;
+}
+
+.button-link__container_nav-button {
+  height: 45px;
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-link__container_nav-button:hover {
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+
+.button-link__container_nav-button:active {
+  background: white;
+}
+
+.button-link__a_nav-button {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+}
+
+.button-link__a_nav-button:active {
+  background: white;
+}
+
+.button-link__background_nav-button {
+  bottom: -5px;
+  left: 5px;
+  height: 45px;
+  width: 45px;
+}

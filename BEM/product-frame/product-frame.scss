@@ -1,0 +1,75 @@
+.product-frame {
+
+    // .product-frame__inner
+
+    &__inner {
+        height: 100%;
+        border: 1px solid #95ff00;
+        box-shadow: 0 0 40px 3px #06dc06, inset 0 0 40px 3px #06dc06;
+        outline: 2px solid #3031304f;
+        outline-offset: 40px;
+    }
+}
+
+.product-frame {
+
+    // .product-frame_green-line
+
+    &_green-line {
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 1px;
+            width: 76%;
+            background: #96ff00;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            z-index: 2;
+            box-shadow: 0 0 40px 0 #06dc06;
+        }
+
+        &::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: #06dd06;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 2;
+            top: 48.5%;
+            right: -76%;
+            box-shadow: 0 0 40px 0 #06dc06;
+        }
+    }
+}
+
+.product-frame { // active-slide
+
+    // .product-frame__inner_active-slide
+
+    &__inner_active-slide {
+        outline-offset: 30px;
+    }
+
+}
+
+.product-frame { // slide
+
+    // .product-frame__inner_slide
+
+    &__inner_slide {
+        outline-offset: 30px;
+    }
+
+}
+
+.product-frame { // quote
+
+    // .product-frame__inner_quote
+
+    &__inner_quote{
+        @include adaptive-value("outline-offset", 40, 15, 1920, 320, 1);
+    }
+}

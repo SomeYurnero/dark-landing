@@ -1,0 +1,47 @@
+.transparent-button-link {
+    border: 1px solid #0a890a;
+    box-shadow: 0 0 7px 2px #0a890a, inset 0 0 7px 2px #0a890a;
+    transition: 0.5s;
+
+    &:hover {
+        background: var(--hover-color);
+    }
+
+    // .transparent-button-link__a
+
+    &__a {
+        display: inline-block;
+        @include adaptive-value("font-size", 24, 15, 1920, 320, 1);
+        font-family: 'AlphaHeadline';
+        color: rgb(255, 255, 255);
+        @include adaptive-value("padding", 20, 13, 1920, 768, 1);
+
+        &:after {
+            margin: 0 0 0 18px;
+        }
+    }
+}
+
+.transparent-button-link { // slide
+
+    // .transparent-button-link_slide
+
+    &_slide {
+
+        &:hover {
+            background: none;
+        }
+    }
+
+    // .transparent-button-link__a_slide
+
+    &__a_slide {
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding: 13px;
+
+        &:after {
+            margin: 0 0 0 12px;
+        }
+    }
+}

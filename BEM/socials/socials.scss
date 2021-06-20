@@ -1,0 +1,132 @@
+.socials {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    @include adaptive-value("column-gap", 10, 3, 1920, 768, 0);
+
+    @media (max-width: 767px) {
+        grid-auto-flow: row;
+        justify-content: initial;
+        row-gap: 15px;
+    }
+
+    &__link {
+        width: 50px;
+        height: 30px;
+        text-align: center;
+
+        @media (max-width: 767px) {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    // .socials__a
+
+    &__a {
+
+        @media (max-width: 767px) {
+            display: inline-block;
+
+            &:hover .socials__text{
+                color: var(--hover-color);
+            }
+
+            &:hover .socials__svg{
+                fill: var(--hover-color);
+            }
+        }
+    }
+
+    // .socials__svg
+
+    &__svg {
+        fill: white;
+        width: 30px;
+        height: 30px;
+        transition: 0.5s;
+
+        @media (max-width: 767px) {
+            position: relative;
+            top: 3px;
+        }
+    }
+
+    // .socials__text
+
+    &__text {
+        display: none;
+        transition: 0.5s;
+
+        @media (max-width: 767px) {
+            display: initial;
+            font-family: 'Muller';
+            font-weight: 500;
+            font-size: 30px;
+            color: white;
+            margin: 0 0 0 15px;
+
+            &::after {
+                content: "/Юниверс";
+                display: block;
+                font-size: 50%;
+            }
+        }
+    }
+}
+
+.socials { // header
+
+    &__a_header {
+        position: relative;
+
+        &::before {
+            content: "";
+            transition-duration: 0.5s;
+        }
+
+        &:hover:before {
+            content: "";
+            width: 40px;
+            height: 140px;
+            position: absolute;
+            top: -115px;
+            left: -5px;
+            z-index: -1;
+            background: var(--hover-color);
+        }
+
+        @media (max-width: 767px) {
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.socials { // contacts
+
+    // .socials_contacts
+
+    &_contacts {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: end;
+        align-items: center;
+        @include adaptive-value("column-gap", 10, 20, 1920, 320, 1);
+
+        @media (max-width: 1365px) {
+            justify-content: center;
+        }
+    }
+
+    &__svg_contacts {
+        transition: 0.5s;
+
+        &:hover {
+            fill: var(--hover-color);
+        }
+    }
+}

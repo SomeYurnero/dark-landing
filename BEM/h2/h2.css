@@ -1,0 +1,13 @@
+.h2 {
+  font-family: 'AlphaHeadline';
+  font-size: 52px;
+  line-height: 115.4%;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.h2 span {
+  display: inline-block;
+  color: #0ee50e;
+}

@@ -1,0 +1,107 @@
+.slider {
+
+    // .slider__container
+
+    &__container {
+        position: static;
+    }
+
+    // .slider__wrapper
+
+    &__wrapper {
+        @include adaptive-value("height", 900, 700, 1920, 320, 1);
+        align-items: center;
+        @include adaptive-value("padding-top", 20, 10, 1920, 320, 1);
+        @include adaptive-value("padding-bottom", 20, 10, 1920, 320, 1);
+    }
+
+    // .slider__slide
+
+    &__slide {
+    }
+
+    // .slider__navigation
+
+    &__navigation {
+        cursor: default;
+        position: absolute;
+        top: 35%;
+        right: -60px;
+        z-index: 10;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:
+            auto
+            auto
+            auto;
+        row-gap: 20px;
+        justify-items: center;
+
+        @media (max-width: 767px) {
+            top: 100%;
+            right: 50%;
+            transform: translate(50%, 0);
+            grid-template-columns: auto auto;
+            grid-template-rows:
+                auto
+                auto;
+            column-gap: 20px;
+        }
+    }
+
+    // .slider__button-link-prev
+
+    &__button-link-prev {
+        grid-row: 2 / 3;
+
+        @media (max-width: 767px) {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+    }
+
+    // .slider__button-link-next
+
+    &__button-link-next {
+        grid-row: 1 / 2;
+
+        @media (max-width: 767px) {
+            grid-column: -2 / -1;
+            grid-row: 1 / 2;
+        }
+    }
+
+    // .slider__pagination
+
+    &__pagination {
+        padding: 10px 0 0 0;
+        grid-row: -2 / -1;
+        font-family: 'AlphaHeadline';
+        color: #0bb90a;
+        font-size: 20px;
+
+        @media (max-width: 767px) {
+            grid-column: 1 / -1;
+            grid-row: 2 / -1;
+            padding: 0;
+            text-align: center;
+        }
+    }
+}
+
+.swiper {
+
+    // .swiper-pagination-current
+
+    &-pagination-current {
+        font-size: 30px;
+        color: white;
+    }
+
+    // .swiper-pagination-total
+
+    &-pagination-total {
+        font-size: 20px;
+        color: #0bb90a;
+    }
+}
