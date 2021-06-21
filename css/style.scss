@@ -19,14 +19,14 @@
     background:
         url("../images/background-divider.png") 0 50vh/100% 2px no-repeat,
         url("../images/background-shadow.png") 0 0/100% 50vh no-repeat,
-        url("../images/body__background.png") 0 0/ cover repeat-y;
+        url("../images/1.png") 0 0/ cover repeat-y;
     background-blend-mode: normal, multiply, normal;
 
     @media (min-width: 1921px) {
         background:
         url("../images/background-divider.png") 0 539px/100% 2px no-repeat,
         url("../images/background-shadow.png") 0 0/100% 540px no-repeat,
-        url("../images/body__background.png") 0 0/100% auto repeat-y;
+        url("../images/1.png") 0 0/100% auto repeat-y;
     }
 
     &_lock {
