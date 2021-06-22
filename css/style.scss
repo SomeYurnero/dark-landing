@@ -18,28 +18,18 @@ html {
 body {
     background:
         url("../images/background-divider.png") 0 50vh/100% 2px no-repeat,
-        url("../images/body__dots.png") 0 30px no-repeat,
+        url("../images/body__dots.png") 50% 10px no-repeat,
         linear-gradient(to bottom, rgba(21,21,21,0) 0%, rgba(0,0,0,1) 100%) 0 0 / 100% 50vh no-repeat,
-        url("../images/body__background2.png") 0 0 / 100% auto repeat-y;
+        url("../images/body__background.png") 0 0 / 100% auto repeat-y;
     background-blend-mode: normal, normal, multiply;
 
-    // background:
-    //     url("../images/background-divider.png") 0 50vh/100% 2px no-repeat,
-    //     url("../images/body__top-explosions.png") 0 410px / 100% auto no-repeat,
-    //     url("../images/body__dots.png") 0 30px no-repeat,
-    //     url("../images/body__waves.png") 0 1110px / 100% auto no-repeat,
-    //     url("../images/body__slider-explosion-left.png") 0 2350px no-repeat,
-    //     linear-gradient(to bottom, rgba(21,21,21,0) 0%, rgba(0,0,0,1) 100%) 0 0 / auto 50vh repeat-x;
-    // background-color: #151515;
-    // background-blend-mode: normal, exclusion, normal, normal, lighten, multiply;
-
-    // @media (min-width: 1921px) {
-    //     background:
-    //     url("../images/background-divider.png") 0 539px/100% 2px no-repeat,
-    //     url("../images/body__top-explotions.png") 0 410px / 100% auto no-repeat,
-    //     url("../images/body__dots.png") 0 30px / 100% auto no-repeat,
-    //     linear-gradient(to bottom, rgba(21,21,21,0) 0%, rgba(0,0,0,1) 100%) 0 0/auto 540px repeat-x #151515;
-    // }
+    @media (min-width: 1921px) {
+        background:
+        url("../images/background-divider.png") 0 50vh/100% 2px no-repeat,
+        url("../images/body__dots.png") 50% 10px / 100% auto no-repeat,
+        linear-gradient(to bottom, rgba(21,21,21,0) 0%, rgba(0,0,0,1) 100%) 0 0 / 100% 50vh no-repeat,
+        url("../images/body__background.png") 0 0 / 100% auto repeat-y;
+    }
 
     &_lock {
 
