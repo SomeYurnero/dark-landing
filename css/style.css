@@ -2789,6 +2789,12 @@ body {
   font-weight: 200;
   color: white;
   text-decoration: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__terms-a:hover {
+  color: var(--hover-color);
 }
 
 .footer__rights {
@@ -2833,4 +2839,10 @@ body {
   font-weight: 200;
   color: white;
   text-decoration: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__author-a:hover {
+  color: var(--hover-color);
 }

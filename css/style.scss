@@ -1392,6 +1392,11 @@ body {
         font-weight: 200;
         color: white;
         text-decoration: underline;
+        transition: 0.5s;
+
+        &:hover {
+            color: var(--hover-color);
+        }
     }
 
     // .footer__rights
@@ -1431,5 +1436,10 @@ body {
         font-weight: 200;
         color: white;
         text-decoration: underline;
+        transition: 0.5s;
+
+        &:hover {
+            color: var(--hover-color);
+        }
     }
 }
