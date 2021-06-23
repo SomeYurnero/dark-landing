@@ -2330,12 +2330,7 @@ body {
 }
 
 .contacts {
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  -o-border-image: linear-gradient(to right, rgba(6, 221, 6, 0) 0%, #06dd06 50%, rgba(6, 221, 6, 0) 100%);
-     border-image: -webkit-gradient(linear, left top, right top, from(rgba(6, 221, 6, 0)), color-stop(50%, #06dd06), to(rgba(6, 221, 6, 0)));
-     border-image: linear-gradient(to right, rgba(6, 221, 6, 0) 0%, #06dd06 50%, rgba(6, 221, 6, 0) 100%);
-  border-image-slice: 1;
+  position: relative;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: start;
@@ -2354,6 +2349,36 @@ body {
   .contacts {
     font-size: calc(22px + 8 * ((100vw - 320px) / 1600));
   }
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 90vw;
+  border-top: 1px solid transparent;
+  -o-border-image: linear-gradient(to right, rgba(6, 221, 6, 0) 0%, #06dd06 50%, rgba(6, 221, 6, 0) 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(rgba(6, 221, 6, 0)), color-stop(50%, #06dd06), to(rgba(6, 221, 6, 0)));
+     border-image: linear-gradient(to right, rgba(6, 221, 6, 0) 0%, #06dd06 50%, rgba(6, 221, 6, 0) 100%);
+  border-image-slice: 1;
+}
+
+.contacts::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 90vw;
+  border-top: 1px solid transparent;
+  -o-border-image: linear-gradient(to right, rgba(6, 221, 6, 0) 0%, #06dd06 50%, rgba(6, 221, 6, 0) 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(rgba(6, 221, 6, 0)), color-stop(50%, #06dd06), to(rgba(6, 221, 6, 0)));
+     border-image: linear-gradient(to right, rgba(6, 221, 6, 0) 0%, #06dd06 50%, rgba(6, 221, 6, 0) 100%);
+  border-image-slice: 1;
 }
 
 @media (max-width: 1365px) {

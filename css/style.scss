@@ -1062,16 +1062,37 @@ body {
 }
 
 .contacts {
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to right, rgba(6,221,6,0) 0%,rgba(6,221,6,1) 50%,rgba(6,221,6,0) 100%);
-    border-image-slice: 1;
+    position: relative;
     display: grid;
     align-items: start;
     grid-template-columns: 1fr max-content 1fr;
     grid-template-rows: repeat(2, 1fr);
     @include adaptive-value("font-size", 30, 22, 1920, 320, 1);
     color: white;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 90vw;
+        border-top: 1px solid transparent;
+        border-image: linear-gradient(to right, rgba(6,221,6,0) 0%,rgba(6,221,6,1) 50%,rgba(6,221,6,0) 100%);
+        border-image-slice: 1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 90vw;
+        border-top: 1px solid transparent;
+        border-image: linear-gradient(to right, rgba(6,221,6,0) 0%,rgba(6,221,6,1) 50%,rgba(6,221,6,0) 100%);
+        border-image-slice: 1;
+    }
 
     @media (max-width: 1365px) {
         grid-template-columns: auto;
