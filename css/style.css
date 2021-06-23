@@ -507,10 +507,6 @@ h1, h2, h3, h4, h5, h6 {
   fill: white;
 }
 
-.button-link__svg:active {
-  fill: #09ca09;
-}
-
 .button-link__background {
   position: absolute;
   bottom: -10px;
@@ -569,6 +565,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .button-link__a_nav-button:active {
   background: white;
+}
+
+.button-link__a_nav-button:active .button-link__svg_nav-button {
+  fill: #09ca09;
 }
 
 .button-link__svg_nav-button {

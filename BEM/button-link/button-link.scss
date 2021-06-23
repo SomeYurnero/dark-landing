@@ -47,9 +47,9 @@
         height: 60%;
         fill: white;
 
-        &:active {
-            fill: #09ca09;
-        }
+        // &:active {
+        //     fill: #09ca09;
+        // }
     }
 
     // .button-link__background
@@ -137,6 +137,10 @@
 
         &:active {
             background: white;
+        }
+
+        &:active .button-link__svg_nav-button {
+            fill: #09ca09;
         }
     }
 
