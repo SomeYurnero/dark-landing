@@ -554,12 +554,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button-link__container_nav-button:hover {
-  -webkit-transform: translate(5px, 5px);
-          transform: translate(5px, 5px);
-}
-
-.button-link__container_nav-button:active {
-  background: white;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .button-link__a_nav-button {
@@ -585,6 +581,16 @@ h1, h2, h3, h4, h5, h6 {
   left: 5px;
   height: 45px;
   width: 45px;
+}
+
+.pointer-device .button-link__container_nav-button:hover {
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+
+.touch-device .button-link__container_nav-button:active {
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
 }
 
 .slider__container {

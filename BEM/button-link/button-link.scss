@@ -122,14 +122,7 @@
         transition: 0.5s;
 
         &:hover {
-            transform: translate(5px, 5px);
-        }
-
-        &:active {
-            background: white;
-        }
-
-        &:focus-within + .button-link__background {
+            transform: none;
         }
     }
 
@@ -143,8 +136,7 @@
         padding: 0;
 
         &:active {
-            background:
-                white;
+            background: white;
         }
     }
 
@@ -163,4 +155,12 @@
         height: 45px;
         width: 45px;
     }
+}
+
+.pointer-device .button-link__container_nav-button:hover {
+    transform: translate(5px, 5px);
+}
+
+.touch-device .button-link__container_nav-button:active {
+    transform: translate(5px, 5px);
 }
