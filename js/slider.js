@@ -1,7 +1,7 @@
 const swiper = new Swiper(".swiper-container", {
     navigation: {
-        nextEl: ".slider__button-link-next",
-        prevEl: ".slider__button-link-prev"
+        nextEl: ".slider__button-link-next-js",
+        prevEl: ".slider__button-link-prev-js"
     },
 
     pagination: {
