@@ -305,6 +305,13 @@ h1, h2, h3, h4, h5, h6 {
   outline-offset: 40px;
 }
 
+.product-frame__a {
+  display: block;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
 .product-frame_green-line {
   position: relative;
 }
@@ -346,12 +353,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .product-frame__inner_quote {
   outline-offset: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 1920px) {
   .product-frame__inner_quote {
     outline-offset: calc(15px + 25 * ((100vw - 320px) / 1600));
   }
+}
+
+.product-frame__inner_quote:hover {
+  background-color: #0bde0750;
 }
 
 .h2 {

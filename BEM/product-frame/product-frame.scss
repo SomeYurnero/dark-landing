@@ -9,9 +9,18 @@
         outline: 2px solid #3031304f;
         outline-offset: 40px;
     }
+
+    // .product-frame__a
+
+    &__a {
+        display: block;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+    }
 }
 
-.product-frame {
+.product-frame { // green-line
 
     // .product-frame_green-line
 
@@ -69,7 +78,12 @@
 
     // .product-frame__inner_quote
 
-    &__inner_quote{
+    &__inner_quote {
         @include adaptive-value("outline-offset", 40, 15, 1920, 320, 1);
+        transition: 0.5s;
+
+        &:hover {
+            background-color: #0bde0750;
+        }
     }
 }
